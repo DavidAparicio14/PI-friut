@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Frutas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Frutería Fresca </h1>
+    <p>Haz clic en una fruta para ver más información</p>
+  </header>
+
+  <main class="grid-frutas">
+    <div class="tarjeta" onclick="mostrarInfo('Manzana', 'Rica en fibra y antioxidantes. Ideal para un snack saludable.')">
+      <span class="icono">🍎</span>
+      <h2>Manzana</h2>
+    </div>
+
+    <div class="tarjeta" onclick="mostrarInfo('Plátano', 'Excelente fuente de potasio y energía rápida para tu día.')">
+      <span class="icono">🍌</span>
+      <h2>Plátano</h2>
+    </div>
+
+    <div class="tarjeta" onclick="mostrarInfo('Naranja', 'Cargada de Vitamina C para reforzar tu sistema inmune.')">
+      <span class="icono">🍊</span>
+      <h2>Naranja</h2>
+    </div>
+  </main>
+
+  <!-- Panel informativo -->
+  <div id="detalle" class="detalle oculto">
+    <h3 id="titulo-fruta"></h3>
+    <p id="desc-fruta"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

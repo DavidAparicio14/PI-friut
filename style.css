@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f8f3;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+.grid-frutas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 150px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+
+.icono {
+  font-size: 50px;
+}
+
+.detalle {
+  margin-top: 30px;
+  padding: 20px;
+  background: #e8f5e9;
+  border-radius: 8px;
+  display: inline-block;
+  max-width: 400px;
+}
+
+.oculto {
+  display: none;
+}
